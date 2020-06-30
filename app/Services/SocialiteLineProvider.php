@@ -278,10 +278,9 @@ class SocialiteLineProvider extends AbstractProvider implements ProviderInterfac
      */
     public function getVerifyResultResponse()
     {
-        $postKey = (version_compare(ClientInterface::VERSION, '6') === 1) ? 'form_params' : 'body';
         $response = $this->getHttpClient()->post($this->getVerifyUrl(), [
             'headers' => ['Accept' => 'application/json'],
-            $postKey => $this->getVerifyFields(),
+            'form_params' => $this->getVerifyFields(),
         ]);
         return json_decode($response->getBody(), true);
     }
