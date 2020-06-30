@@ -1,0 +1,716 @@
+@charset "UTF-8";
+
+/* 使用：portfolio / image_upload */
+
+
+/*
+メインカラー　#003366
+サブカレー　#6699cc
+*/
+
+* {
+    float: none;
+    position: static;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #6699cc;
+    /* text-decoration: underline; */
+    text-decoration: none;
+    border-top: solid 1px #6699cc;
+    border-bottom: solid 1px #6699cc;
+    border-radius: 0px;
+    padding: 1px 0px;
+}
+
+a.a-img:hover {
+    color: #6699cc;
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.a-main-menu {
+    color: #ffffff;
+}
+
+a.a-main-menu:hover {
+    color: #ffff00;
+    text-decoration: none;
+    border-top: solid 1px #ffff00;
+    border-bottom: solid 1px #ffff00;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    padding: 0px 0px;
+}
+
+a.a-footer {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a.a-footer:hover {
+    color: #003366;
+    /* text-decoration: underline; */
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+
+/* #footer-a-contact {
+    color: #ffffff;
+}
+
+#footer-button {
+    display: block;
+} */
+
+
+/*
+* Body
+*/
+
+body {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+
+/*
+* Container
+*/
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
+
+/*
+* アッパー
+*/
+
+.upper {
+    width: 80px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    transition: 1s;
+    opacity: 0.5;
+}
+
+.upper:hover {
+    width: 90px;
+    right: 45px;
+    bottom: 45px;
+    opacity: 1;
+    border: none;
+}
+
+
+/*
+* Header
+*/
+
+header {
+    /* width: 100%; */
+    height: 100px;
+    background-image: url("/storage/images/portfolioSiteHeaderBgImg.jpg");
+    background-color: #000000;
+    background-size: cover;
+    /* position: fixed; */
+}
+
+.header-logo {
+    float: left;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 30px 0px 30px 15px;
+    font-size: 28px;
+}
+
+.main-menu {
+    color: #ffffff;
+    float: right;
+    letter-spacing: 1px;
+    margin: 20px 30px auto auto;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.main-menu-li {
+    float: left;
+}
+
+.mgr-30 {
+    margin-left: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* .main-menu-burger {
+    display: none;
+} */
+
+.hero_header {
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+
+/*
+* About Section
+*/
+
+.text_column {
+    width: 90%;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 25px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #A3A3A3;
+}
+
+.gallery {
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    /* [disabled]min-width: 400px;*/
+    padding-bottom: 35px;
+    padding-top: 0px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+}
+
+.thumbnail {
+    width: 23%;
+    text-align: center;
+    float: left;
+    margin-top: 35px;
+    background-color: #f5f5f5;
+    padding-bottom: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 3px;
+    padding-top: 20px;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+}
+
+.gallery .thumbnail h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #000000;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.gallery .thumbnail p {
+    margin: 0;
+    color: #000000;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+/*
+* More info
+*/
+
+.column {
+    width: 50%;
+    text-align: center;
+    /* padding-top: 30px; */
+    /* padding: auto; */
+    margin-top: 0px;
+    float: left;
+}
+
+.intro .column h3 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 200px;
+    opacity: 0.8;
+}
+
+.intro .column p {
+    color: #FFFFFF;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 93%;
+}
+
+.button {
+    width: 200px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    transition: all 0.3s linear;
+}
+
+.button:hover {
+    background-color: #c3d4f5;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0e0933;
+    color: #FFFFFF;
+    /* text-transform: uppercase; */
+    /* font-weight: lighter; */
+    letter-spacing: 2px;
+    border-top-width: 2px;
+}
+
+footer {
+    background-color: #003366;
+    padding-top: 60px;
+    padding-bottom: 60PX;
+}
+
+.intro {
+    display: inline-block;
+    /* background-color: #FFFFFF; */
+    /* padding-bottom: 35px; */
+    background-color: #cccccc;
+    background-image: url("/storage/images/portfolioSiteMainBgImg.jpg");
+    background-size: cover;
+    height: 500px;
+}
+
+.profile {
+    width: 55%;
+    margin-top: 30px;
+}
+
+.myname {
+    white-space: pre-wrap;
+}
+
+
+/*
+.colum-title {
+    font-weight: bolder;
+    font-size: 18px;
+    color: #c3d4f5;
+} */
+
+.chara_intro {
+    white-space: pre-wrap;
+}
+
+.gallery .thumbnail .tag {
+    color: #000000;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*
+* ポートフォリオ　お問い合わせフォーム
+*/
+
+.cp_iptxt {
+    position: relative;
+    width: 50%;
+    margin: 30px 3%;
+}
+
+.cp_iptxt textarea {
+    position: relative;
+    width: 97%;
+    height: 200px;
+    margin: 30px 3%;
+}
+
+.cp_iptxt input[type=text] {
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0;
+    padding: 0.3em;
+    transition: 0.3s;
+    border: 1px solid #1b2538;
+    border-radius: 4px;
+    outline: none;
+}
+
+.cp_iptxt textarea[type=textarea] {
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0;
+    padding: 0.3em;
+    transition: 0.3s;
+    border: 1px solid #1b2538;
+    border-radius: 4px;
+    outline: none;
+}
+
+.cp_iptxt input[type=text]:focus {
+    border-color: #da3c41;
+}
+
+.cp_iptxt textarea[type=textarea]:focus {
+    border-color: #da3c41;
+}
+
+.cp_iptxt input[type=text] {
+    padding-left: 10px;
+}
+
+.cp_iptxt textarea[type=textarea] {
+    padding-left: 10px;
+}
+
+
+/* .cp_iptxt i {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    padding: 9px 8px;
+    transition: 0.3s;
+    color: #aaaaaa;
+} */
+
+.cp_iptxt input[type=text]:focus+i {
+    color: #da3c41;
+}
+
+.cp_iptxt textarea[type=textarea]:focus+i {
+    color: #da3c41;
+}
+
+
+/*
+* ノートPC
+*/
+
+@media (min-width: 768px) and (max-width: 1096px) {
+    /* .main-menu-burger {
+        display: none;
+    } */
+    .text_column {
+        width: 100%;
+    }
+    .thumbnail {
+        width: 48%;
+    }
+    .text_column {
+        width: 90%;
+        margin: 0;
+        padding: 0px;
+    }
+    .intro .column p {
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: justify;
+        /* line-height: 22px; */
+        font-size: 14px;
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .profile {
+        width: 55%;
+        margin-top: 30px;
+    }
+}
+
+
+/*
+* タブレット
+*/
+
+@media (min-width: 321px)and (max-width: 767px) {
+    header {
+        width: 100%;
+        height: 120px;
+        /* background-image: url("/storage/images/header_BG_IMG_01.jpg"); */
+        /* background-color: #000000; */
+        background-size: cover;
+    }
+    .header-logo {
+        float: none;
+        padding: 15px 0px 0px 0px;
+        /* text-align: center; */
+    }
+    .logo {
+        margin: 0px auto 0px auto;
+        text-align: center;
+        font-size: 25px;
+    }
+    .main-menu {
+        display: block;
+        float: none;
+        letter-spacing: 1px;
+        margin: 0px auto 0px auto;
+        padding: 0px 0px 0px 0px;
+        font-size: 15px;
+        text-align: center;
+    }
+    /*                                                    */
+    .main-menu-ul {
+        text-align: center;
+        margin: 10px 0px;
+        padding: 0px;
+    }
+    .main-menu-li {
+        width: 100%;
+        float: none;
+        padding: 0px;
+        margin-right: 0px;
+        line-height: 1.3em;
+        /* text-align: center; */
+    }
+    .mgr-30 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    /*                                                         */
+    .column {
+        width: 50%;
+        margin-top: 0px;
+    }
+    .text_column {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+    .thumbnail {
+        width: 90%;
+    }
+    .thumbnail {
+        width: 100%;
+    }
+    .text_column {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 90%;
+    }
+    .column {
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .intro {
+        display: inline-block;
+        /* background-color: #FFFFFF; */
+        /* padding-bottom: 35px; */
+        background-color: #cccccc;
+        background-image: url("/storage/images/portfolioSiteMainBgImg_maxWidth767px.png");
+        background-size: cover;
+        /* height: 450px; */
+    }
+    .intro .column p {
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+        /* text-align: center; */
+        text-align: justify;
+        line-height: 15px;
+        font-size: 12px;
+        margin-top: 0px;
+        /* margin-right: 20px; */
+        /* margin-left: 20px; */
+    }
+    .profile {
+        width: 25%;
+        margin-top: 10px;
+    }
+    /*
+    * ポートフォリオ　お問い合わせフォーム
+    */
+    .cp_iptxt {
+        position: relative;
+        width: 80%;
+        margin: 25px 3%;
+    }
+}
+
+
+/*
+* スマートフォン
+*/
+
+@media (max-width: 320px) {
+    header {
+        width: 100%;
+        height: 200px;
+        /* background-image: url("/storage/images/portfolioSiteHeaderBgImg_maxWidth320px.png"); */
+        /* background-color: #000000; */
+        background-size: cover;
+    }
+    .header-logo {
+        float: none;
+        padding: 15px 0px 0px 0px;
+        text-align: center;
+    }
+    .logo {
+        margin: 0px auto 0px auto;
+        font-size: 22px;
+    }
+    .main-menu {
+        width: 90%;
+        display: inline-block;
+        float: none;
+        letter-spacing: 0px;
+        line-height: 1.3em;
+        margin: 0px auto 0px auto;
+        padding: 0px 0px 50px 0px;
+        font-size: 15px;
+        text-align: center;
+    }
+    /*  */
+    .text_column {
+        width: 100%;
+        text-align: justify;
+        padding: 0;
+    }
+    .intro {
+        display: inline-block;
+        /* background-color: #FFFFFF; */
+        /* padding-bottom: 35px; */
+        background-color: #cccccc;
+        background-image: url("/storage/images/portfolioSiteMainBgImg_maxWidth320px.png");
+        background-size: cover;
+        height: 600px;
+    }
+    .text_column {
+        width: 90%;
+        padding-left: 20px;
+    }
+    .thumbnail {
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .hero_header {
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .intro .column p {
+        width: 80%;
+        padding-left: auto;
+        padding-right: auto;
+        /* text-align: center; */
+        text-align: justify;
+        line-height: 13px;
+        font-size: 12px;
+        margin-top: 0px;
+        /* margin-right: 20px; */
+        /* margin-left: 20px; */
+    }
+    .profile {
+        width: 60%;
+        margin-top: 5px;
+    }
+    /*
+    * ポートフォリオ　お問い合わせフォーム
+    */
+    .cp_iptxt {
+        position: relative;
+        width: 93%;
+        margin: 20px 3%;
+    }
+    /*
+    * アッパー
+    */
+    .upper {
+        width: 40px;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        transition: 1s;
+        opacity: 0.5;
+    }
+    .upper:hover {
+        width: 50px;
+        right: 25px;
+        bottom: 25px;
+        opacity: 1;
+        border: none;
+    }
+}
